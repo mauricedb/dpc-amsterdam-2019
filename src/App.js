@@ -1,12 +1,18 @@
 import React from "react";
 import "./App.css";
-import WindowSize from "./window-size";
+
+import { TimeProvider } from "./components/time-context";
+import WindowSize from "./components/window-size";
+import Clock from "./components/clock";
 
 function App() {
   return (
-    <div className="app">
-      <WindowSize />
-    </div>
+    <TimeProvider>
+      <div className="app">
+        <WindowSize />
+        <Clock />
+      </div>
+    </TimeProvider>
   );
 }
 
