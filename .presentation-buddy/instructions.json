@@ -1,7 +1,7 @@
 [
   {
     "type": "openFile",
-    "path": "src/window-size.js"
+    "path": "src/components/window-size.js"
   },
   {
     "type": "goto",
@@ -46,7 +46,7 @@
   {
     "type": "goto",
     "line": 64,
-    "column": 3
+    "column": 5
   },
   {
     "type": "command",
@@ -107,7 +107,7 @@
 
   {
     "type": "openFile",
-    "path": "src/window-size.js"
+    "path": "src/components/window-size.js"
   },
   {
     "type": "goto",
@@ -139,10 +139,55 @@
     "type": "wait",
     "delay": "manual"
   },
+  {
+    "type": "openFile",
+    "path": "src/components/clock.js"
+  },
+  {
+    "type": "goto",
+    "line": 9,
+    "column": 47
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand",
+    "repeat": 2
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand",
+    "repeat": 4
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 19
+  },
+  {
+    "type": "typeText",
+    "text": ["", "  const { time } = React.useContext(TimeContext);", ""]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
   {
     "type": "openFile",
-    "path": "src/window-size.js"
+    "path": "src/components/window-size.js"
   },
   {
     "type": "goto",

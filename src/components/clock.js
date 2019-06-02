@@ -5,11 +5,9 @@ import { TimeContext } from "./time-context";
 
 function Clock() {
   return (
-    <div>
-      <TimeContext.Consumer>
-        {({ time }) => <AnalogClock time={time} />}
-      </TimeContext.Consumer>
-    </div>
+    <TimeContext.Consumer>
+      {({ time }) => <AnalogClock time={time} />}
+    </TimeContext.Consumer>
   );
 }
 
