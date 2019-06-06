@@ -160,7 +160,7 @@
   {
     "type": "command",
     "command": "editor.action.smartSelect.expand",
-    "repeat": 4
+    "repeat": 5
   },
   {
     "type": "command",
