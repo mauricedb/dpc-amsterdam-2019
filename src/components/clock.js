@@ -4,11 +4,9 @@ import AnalogClock from "./analog-clock";
 import { TimeContext } from "./time-context";
 
 function Clock() {
-  return (
-    <TimeContext.Consumer>
-      {({ time }) => <AnalogClock time={time} />}
-    </TimeContext.Consumer>
-  );
+  const { time } = React.useContext(TimeContext);
+
+  return <AnalogClock time={time} />;
 }
 
 export default Clock;
